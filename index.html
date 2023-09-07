@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Enioluwa</title>
-</head>
-<body>
-    <div id="header">
-        <img data-testid="slackDisplayImage" src="public/pic.jpg" alt="Enioluwa">
-        <h1 data-testid="slackUserName">Enioluwa</h1>
+  </head>
+  <body>
+    <div class="body">
+      <header class="date">
+        <p data-testid="currentDayOfTheWeek" class="day"></p>
+        <p data-testid="currentUTCTime" class="time"></p>
+      </header>
+
+      <main>
+        <section class="profile">
+          <h1 data-testid="slackUserName" class="profileName">Enioluwa</h1>
+          <h4 data-testid="myTrack" class="track">Frontend</h4>
+          <a
+            class="githubBtn"
+            data-testid="githubURL"
+            href="https://github.com/Ennioluwa/task1"
+            >Open Github</a
+          >
+        </section>
+
+        <section class="image">
+          <img
+            data-testid="slackDisplayImage"
+            src="public/pic.jpg"
+            alt="Enioluwa"
+            class="profileImage"
+          />
+        </section>
+      </main>
     </div>
-    
-    <div id="content">
-        <p data-testid="currentDayOfTheWeek"></p>
-        <p data-testid="currentUTCTime"></p>
-    
-        <p>Track: <span data-testid="myTrack">Frontend</span></p>
-    
-        <a data-testid="githubURL" href="https://github.com/johnDoe/frontend-page">GitHub Source Code</a>
-    </div>
+
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
